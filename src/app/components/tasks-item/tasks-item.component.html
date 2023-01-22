@@ -1,9 +1,15 @@
-<div class="task">
+<div 
+    class="task"
+    [ngClass]="{ reminder: task.reminder}"
+    (click)="onToggle(task)"
+>   <!-- ngClass agrega la class reminder si task.reminder es true
+    dnclic es si hacemos click a la tarea se ejecuta onToggle-->
     <h3>
         {{ task.text }} 
         <fa-icon 
             [icon]="faTimes"
             [ngStyle]="{'color': 'red'}"
+            (click)="onDelete(task)"
         >
         </fa-icon></h3>
     <h4>

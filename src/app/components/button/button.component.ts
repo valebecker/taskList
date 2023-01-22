@@ -8,7 +8,8 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class ButtonComponent implements OnInit {
   @Input() text: string = "";   //Para recibir los valores que vienen en 
   @Input() color: string = "";  //los atributos que pusimos en header.component html
-  @Output() btnClick = new EventEmitter(); //Emitimos hacia afuera del componente una acción
+  @Output() btnClick = new EventEmitter(); //Emitimos hacia afuera del componente 
+                                          //la acción btnClick
   constructor() { }
 
   ngOnInit(): void {
