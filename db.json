@@ -23,6 +23,12 @@
       "text": "Tarea 4",
       "day": "Marzo 5 a las 12:00",
       "reminder": true
+    },
+    {
+      "text": "Nueva Tarea",
+      "day": "5 de septiembre 13:00",
+      "reminder": true,
+      "id": 5
     }
   ]
 }
